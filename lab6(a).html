@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loader {
+            display:flex;
+            gap:20px;
+            width: 20%;
+        }
+
+        .loader div {
+            width: 60px;
+            height: 20px;
+            border-radius: 30%;
+            background-color: #ec8758;
+            animation: bounce 0.6s alternate;
+        }
+        
+        body{
+            background-color:rgb(234, 239, 234);
+            align-content: center;
+        }
+        .loader div:nth-child(1) {
+            animation: bounce 2s infinite;
+        }
+        .loader div:nth-child(2) {
+            animation: bounce 2s infinite;
+        }
+
+        .loader div:nth-child(3) {
+            animation: bounce 2s infinite 0.2s;
+        }
+        .loader div:nth-child(4) {
+            animation: bounce 2s infinite 0.2s;
+        }
+        .loader div:nth-child(5) {
+            animation: bounce 2s infinite 0.2s;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: rotate(90deg);
+                opacity: 70%;
+            }
+            50% {
+                transform: skew(40deg);
+                opacity: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

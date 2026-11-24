@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box
+    {
+      border: 2px dashed rgb(15, 17, 15);
+      margin: 10px;
+      padding: 5px;
+      background-color: rgb(234, 238, 239);
+      text-align: center;
+      font-weight: bold;
+    }
+    .container
+    {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      background-color: rgb(181, 199, 19);
+      height: 300px;
+      width: 200px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      align-content:space-around;
+      font-weight: bold;
+    }
+    .box1 {
+       
+            flex-grow: 1;
+            flex-basis: 100px;
+            flex-shrink: 13; 
+            order: 6;        
+        }
+         .box2 {
+            flex-grow:1;
+            align-self: baseline;
+            order: 4;
+        }
+
+        .box3 {
+           flex-grow: 2;
+           order: 1;
+        }
+
+         .box4 {
+            flex-grow: 2;
+            order: 5;
+        }
+        .box5 {
+       
+            flex-grow: 1;
+            order: 2;
+        }
+         .box6{
+            flex-shrink:4;
+            order: 3;
+        }
+        .box7{
+          order: 7;
+        }
+        .box8{
+          order: 8;
+        }
+  </style>
+</head>
+<body>
+    <div class="container">
+      <div class="box box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+      <div class="box box4">4</div>
+      <div class="box box5">5</div>
+      <div class="box box6">6</div>
+      <div class="box box7">7</div>
+      <div class="box box8">8</div>
+    </div>
+</body>
+</html>
